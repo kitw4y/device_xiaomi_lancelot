@@ -11,22 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common RisingOS stuff.
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit from Cipher Common
+$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
-# RisingOs Flags
-RISING_MAINTAINER := Lang
-RISING_CHIPSET := MT6768
-WITH_GMS := true
+# CipherOS specific flags
+# Bootanimation res
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_BATTERY := 5020mAh
-RISING_DISPLAY := 2340x1080
-RISING_BUILDTYPE := UNOFFICIAL
-TARGET_PREBUILT_GOOGLE_CAMERA := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+# Faceunlock Support
 TARGET_FACE_UNLOCK_SUPPORTED := true
+# Maintainer
+CIPHER_MAINTAINER := Lang
+# GMS
+CIPHER_GAPPS := true
+# Battery Info
+CIPHER_BATTERY := 5020
+# Screen Size
+CIPHER_SCREEN :=  6.5
+# Enable Blurs
+CIPHER_BLUR := true
 
-PRODUCT_NAME := rising_lancelot
+PRODUCT_NAME := cipher_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
