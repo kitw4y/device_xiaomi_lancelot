@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_lancelot.mk
+    $(LOCAL_DIR)/rising_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
     rising_lancelot-user \
