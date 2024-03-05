@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_lancelot.mk
+    $(LOCAL_DIR)/cipher_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_lancelot-user \
-    rising_lancelot-userdebug \
-    rising_lancelot-eng
+    cipher_lancelot-user \
+    cipher_lancelot-userdebug \
+    cipher_lancelot-eng
