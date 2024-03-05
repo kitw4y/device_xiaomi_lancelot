@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/superior_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_lancelot-user \
-    superior_lancelot-userdebug \
-    superior_lancelot-eng
+    rising_lancelot-user \
+    rising_lancelot-userdebug \
+    rising_lancelot-eng
